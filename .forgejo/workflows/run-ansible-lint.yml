@@ -17,7 +17,7 @@ jobs:
       - name: Install ansible-lint
         run: |
           apt update
-          apt install -y --no-install-recommends ansible-lint
+          apt install -y --no-install-recommends ansible ansible-lint
 
       - name: Run ansible-lint
         run: ansible-lint .
