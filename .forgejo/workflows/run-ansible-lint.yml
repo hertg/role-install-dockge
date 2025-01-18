@@ -17,7 +17,10 @@ jobs:
       - name: Install ansible-lint
         run: |
           apt update
-          apt install -y --no-install-recommends ansible ansible-lint
+          apt install -y --no-install-recommends ansible-lint
+
+      - name: Install ansible community docker collection
+        run: ansible-galaxy collection install community.docker
 
       - name: Run ansible-lint
         run: ansible-lint .
