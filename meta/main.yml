@@ -1,6 +1,5 @@
 ---
-dependencies:
-  - community.docker
+dependencies: []
 
 galaxy_info:
   author: hertg
